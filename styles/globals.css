@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+.app {
+  height: 100%;
+}
+
+body {
+  /* background-color: #fee904; */
+  /* background-color: #fff7a1; */
+  /* background-color: #fbf5b1; */
+  background-color: #c2ddd7;
+  /* background-color: white; */
+  /* background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
+}
