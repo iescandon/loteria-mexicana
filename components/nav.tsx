@@ -2,12 +2,12 @@ import Link from "next/link";
 
 export default function Nav() {
   return (
-    <nav className="h-44 w-full flex flex-row justify-center">
+    <nav className="h-44 w-full flex justify-center">
       <Link className="h-full" href="/">
         <img
-          className="h-full drop-shadow-xl"
+          className="h-full"
           src="/images/logo-icon.png"
-          alt="star wars loteria logo"
+          alt="don clemente loteria logo"
         />
       </Link>
     </nav>

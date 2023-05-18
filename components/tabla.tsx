@@ -10,7 +10,7 @@ export default function Tabla({ isLoading, randomNumberArray }: TablaProps) {
     <>
       <div
         className={`flex flex-col drop-shadow-2xl ${
-          isLoading ? "invisible h-0 w-0 overflow-hidden" : "visible"
+          isLoading ? "invisible h-0 w-0 overflow-hidden" : "visible h-full w-full md:w-[460px]"
         }`}
       >
         <div className="bg-white px-2 pt-1 flex justify-between">
@@ -27,7 +27,7 @@ export default function Tabla({ isLoading, randomNumberArray }: TablaProps) {
             {randomNumberArray?.map((num, i) => (
               <div
                 key={`div-${i}`}
-                className="hover:cursor-pointer h-[165px]"
+                className="hover:cursor-pointer relative"
               >
                 <Carta key={i} cardNum={num} clickable={true} />
               </div>

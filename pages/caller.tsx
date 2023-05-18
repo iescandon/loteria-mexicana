@@ -2,7 +2,7 @@ import Carta from "@/components/carta";
 import { useState, useEffect } from "react";
 import Nav from "@/components/nav";
 
-export default function Dealer() {
+export default function Caller() {
   const [hasStarted, setHasStarted] = useState<boolean>(false);
   const [hasEnded, setHasEnded] = useState<boolean>(false);
   const [cardNum, setCardNum] = useState<number | undefined>(undefined);
@@ -58,37 +58,31 @@ export default function Dealer() {
     <>
       {!hasStarted ? (
         <>
-          <section className="h-screen p-4">
-            <div className="flex flex-row h-[60%] md:h-full w-full items-center justify-center">
-              <button
-                className="bg-[#e81e25] text-2xl font-lora font-bold px-3 py-2 outline outline-2"
-                onClick={() => {
-                  const firstNum = shuffledCardsArray[0];
-                  setCardNum(firstNum);
-                  setHasStarted(true);
-                }}
-              >
-              START
-              </button>
-            </div>
-            {/* <img
-              className="absolute bottom-0 right-0 h-[300px]"
-              src="/images/baby-yoda.png"
-              alt="baby yoda pressing button"
-            /> */}
+          <section className="flex flex-row md:min-h-screen w-full items-center justify-center p-6">
+            <button
+              className="bg-[#e81e25] text-2xl font-lora font-bold px-3 py-2 outline outline-2"
+              onClick={() => {
+                const firstNum = shuffledCardsArray[0];
+                setCardNum(firstNum);
+                setHasStarted(true);
+              }}
+            >
+            START
+            </button>
           </section>
         </>
       ) : (
-        <section className="md:min-h-screen p-4 md:pt-8 md:pb-12 md:px-10 relative">
-          <Nav />
-          {!hasEnded ? (
+        <>
+        <Nav />
+        <section className="p-4 md:pt-8 md:pb-12 md:px-10">
+          {!hasEnded && (
             <>
-              <div className="flex flex-row justify-center pt-8">
+              <div className="flex flex-row justify-center pt-8 w-full">
                 <div className="h-[300px] p-5 bg-white shadow-md rounded-xl">
                   <Carta cardNum={cardNum} clickable={false} />
                 </div>
               </div>
-              <div className="flex flex-row justify-center items-center pt-3 pb-8">
+              <div className="flex flex-row justify-center items-center pt-3 pb-8 w-full">
                 <button
                   id="nextBtn"
                   className="bg-[#07adee] outline outline-2 text-3xl w-[50px] h-[40px] rounded-full"
@@ -100,10 +94,8 @@ export default function Dealer() {
                 </button>
               </div>
             </>
-          ) : (
-            <div className="py-4"></div>
           )}
-          <div className="flex flex-row flex-wrap justify-center">
+          <div className="flex flex-row flex-wrap justify-center w-full">
             <>
               {discardedCardsArray?.map((num, i) => (
                 <div
@@ -116,6 +108,7 @@ export default function Dealer() {
             </>
           </div>
         </section>
+        </>
       )}
     </>
   );

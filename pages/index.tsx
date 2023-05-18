@@ -14,15 +14,16 @@ export default function Home() {
       <meta name="msapplication-TileColor" content="#da532c" />
       <meta name="theme-color" content="#ffffff" />
     </Head>
-    <section className="md:min-h-screen flex flex-col items-center px-8 py-4 md:pt-8 md:pb-12 md:px-10">
-      <Nav />
-      <div className="flex flex-col md:flex-row h-full w-full max-w-[800px] justify-center items-center mt-8 py-8">
-        <div className="flex flex-col items-center justify-center md:w-1/2 pb-6 md:pb-0">
-          <Link className="text-center" href="/dealer">
+    <Nav />
+    {/* <section className="flex flex-col items-center px-8 py-4 md:pt-8 md:pb-12 md:px-10"> */}
+    <section className="flex justify-center px-8 py-4 md:pt-8 md:pb-12 md:px-10">
+      <div className="flex flex-col md:flex-row h-full w-full max-w-[800px] justify-center items-center py-8">
+        <div className="flex flex-col items-center justify-center w-full md:w-1/2 pb-6 md:pb-0">
+          <Link className="text-center" href="/caller">
             <img
-              className="h-[225px] md:h-[375px]"
+              className="h-[225px] md:h-[375px] drop-shadow-md"
               src="/images/caller.png"
-              alt="darth vader holding loteria card like a card dealer"
+              alt="loteria cards fanned out"
             />
           <h1 className="text-xl font-wixMadeforDisplay">EL CANTOR</h1>
           </Link>
@@ -30,9 +31,9 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center md:w-1/2">
           <Link className="text-center" href="/player">
             <img
-              className="h-[225px] md:h-[375px] shadow-m"
+              className="h-[225px] md:h-[375px] drop-shadow-xl"
               src="/images/player.png"
-              alt="loteria card"
+              alt="loteria playing card"
             />
             <h1 className="text-xl font-wixMadeforDisplay">EL JUGADOR</h1>
           </Link>
