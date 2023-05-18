@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Nav from "@/components/nav";
 
 export default function Caller() {
+  const [hasLoaded, setHasLoaded] = useState<boolean>(false);
   const [hasStarted, setHasStarted] = useState<boolean>(false);
   const [hasEnded, setHasEnded] = useState<boolean>(false);
   const [cardNum, setCardNum] = useState<number | undefined>(undefined);
@@ -58,7 +59,7 @@ export default function Caller() {
     <>
       {!hasStarted ? (
         <>
-          <section className="flex flex-row md:min-h-screen w-full items-center justify-center p-6">
+          <section className="flex flex-row md:min-h-screen items-center justify-center p-6">
             <button
               className="bg-[#e81e25] text-2xl font-lora font-bold px-3 py-2 outline outline-2"
               onClick={() => {
@@ -77,12 +78,12 @@ export default function Caller() {
         <section className="p-4 md:pt-8 md:pb-12 md:px-10">
           {!hasEnded && (
             <>
-              <div className="flex flex-row justify-center pt-8 w-full">
+              <div className="flex flex-row justify-center pt-8">
                 <div className="h-[300px] p-5 bg-white shadow-md rounded-xl">
                   <Carta cardNum={cardNum} clickable={false} />
                 </div>
               </div>
-              <div className="flex flex-row justify-center items-center pt-3 pb-8 w-full">
+              <div className="flex flex-row justify-center items-center pt-3 pb-8">
                 <button
                   id="nextBtn"
                   className="bg-[#07adee] outline outline-2 text-3xl w-[50px] h-[40px] rounded-full"
@@ -95,14 +96,14 @@ export default function Caller() {
               </div>
             </>
           )}
-          <div className="flex flex-row flex-wrap justify-center w-full">
+          <div className="flex flex-row flex-wrap justify-center">
             <>
               {discardedCardsArray?.map((num, i) => (
                 <div
                   key={`div-${i}`}
                   className="h-[200px] p-3 bg-white mx-1 mb-2 shadow-2xl rounded-md"
                 >
-                  <Carta key={i} cardNum={num} clickable={false} />
+                  <Carta key={i} cardNum={num} />
                 </div>
               ))}
             </>

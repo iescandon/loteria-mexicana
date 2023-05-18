@@ -3,7 +3,7 @@ import { generateRandomNumber } from "../utils/index";
 
 type CartaProps = {
   cardNum: number | undefined;
-  clickable: boolean;
+  clickable?: boolean;
 };
 
 export default function Carta({ cardNum, clickable }: CartaProps) {
