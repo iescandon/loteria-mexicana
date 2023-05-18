@@ -13,7 +13,7 @@ export default function Tabla({ isLoading, randomNumberArray }: TablaProps) {
           isLoading ? "invisible h-0 w-0 overflow-hidden" : "visible h-full w-full md:w-[460px]"
         }`}
       >
-        <div className="flex flex-row items-end bg-white px-2 pt-4 md:pt-1 flex justify-between">
+        <div className="flex flex-row items-end bg-white px-2 pt-6 md:pt-1 flex justify-between">
           <p className="font-bold font-lora">LOTERIA</p>
           <img
               className="h-8 pb-1"
