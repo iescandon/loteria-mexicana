@@ -78,7 +78,7 @@ export default function Caller() {
         <section className="p-4 md:pt-8 md:pb-12 md:px-10">
           {!hasEnded && (
             <>
-              <div className="flex flex-row justify-center pt-8">
+              <div className="flex flex-row justify-center pt-8 w-full">
                 <div className="h-[300px] p-5 bg-white shadow-md rounded-xl">
                   <Carta cardNum={cardNum} clickable={false} />
                 </div>
@@ -96,7 +96,7 @@ export default function Caller() {
               </div>
             </>
           )}
-          <div className="flex flex-row flex-wrap justify-center">
+          <div className="flex flex-row flex-wrap justify-center w-full">
             <>
               {discardedCardsArray?.map((num, i) => (
                 <div

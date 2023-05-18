@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Nav() {
   return (
-    <nav className="h-44 flex justify-center">
+    <nav className="h-44 w-full flex justify-center">
       <Link className="h-full" href="/">
         <img
           className="h-full"
