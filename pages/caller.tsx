@@ -86,12 +86,12 @@ export default function Caller() {
               <div className="flex flex-row justify-center items-center pt-3 pb-8">
                 <button
                   id="nextBtn"
-                  className="bg-[#07adee] outline outline-2 text-3xl w-[50px] h-[40px] rounded-full"
+                  className="bg-[#07adee] border border-2 border-black text-3xl w-[50px] h-[40px] rounded-full"
                   onClick={() => {
                     getNewCard();
                   }}
                 >
-                  <p className="font-[900]">&#8594;</p>
+                  <span className="font-[900]">&#8594;</span>
                 </button>
               </div>
             </>
