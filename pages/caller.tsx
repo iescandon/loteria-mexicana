@@ -59,7 +59,7 @@ export default function Caller() {
     <>
       {!hasStarted ? (
         <>
-          <section className="flex flex-row md:min-h-screen items-center justify-center p-6">
+          <section className="flex flex-row h-screen md:min-h-screen items-center justify-center p-6">
             <button
               className="bg-[#e81e25] text-2xl font-lora font-bold px-3 py-2 outline outline-2"
               onClick={() => {
