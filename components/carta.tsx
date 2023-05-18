@@ -20,7 +20,7 @@ export default function Carta({ cardNum, clickable }: CartaProps) {
   return (
     <>
       <img
-        className="h-full border border-1 border-black"
+        className="h-full w-full border border-1 border-black"
         key={`card-${cardNum}`}
         src={`/images/cards/${cardNum}.png`}
         alt="loteria card"

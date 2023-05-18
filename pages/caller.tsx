@@ -78,8 +78,8 @@ export default function Caller() {
         <section className="p-4 md:pt-8 md:pb-12 md:px-10">
           {!hasEnded && (
             <>
-              <div className="flex flex-row justify-center pt-8 w-full">
-                <div className="h-[300px] p-5 bg-white shadow-md rounded-xl">
+              <div className="flex flex-row justify-center pt-8">
+                <div className="w-[205px] h-[300px] p-5 bg-white shadow-md rounded-xl">
                   <Carta cardNum={cardNum} clickable={false} />
                 </div>
               </div>
@@ -101,7 +101,7 @@ export default function Caller() {
               {discardedCardsArray?.map((num, i) => (
                 <div
                   key={`div-${i}`}
-                  className="h-[200px] p-3 bg-white mx-1 mb-2 shadow-2xl rounded-md"
+                  className="w-[135px] h-[198px] p-3 bg-white mx-1 mb-2 shadow-2xl rounded-md"
                 >
                   <Carta key={i} cardNum={num} />
                 </div>
