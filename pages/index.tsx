@@ -16,26 +16,26 @@ export default function Home() {
     </Head>
     <Nav />
     {/* <section className="flex flex-col items-center px-8 py-4 md:pt-8 md:pb-12 md:px-10"> */}
-    <section className="flex justify-center px-8 py-4 md:pt-8 md:pb-12 md:px-10">
+    <section className="flex justify-center px-8 py-4 md:pt-8 md:pb-12 md:px-10 mb-4">
       <div className="flex flex-col md:flex-row h-full w-full max-w-[800px] justify-center items-center">
         <div className="flex flex-col items-center justify-center w-full md:w-1/2 pb-10 md:pb-0">
           <Link className="text-center" href="/caller">
             <img
-              className="h-[250px] md:h-[400px] pb-2 md:pb-4"
+              className="h-[250px] md:h-[400px] pb-0 md:pb-2"
               src="/images/caller.png"
               alt="loteria cards fanned out"
             />
-          {/* <h1 className="text-lg md:text-xl font-medium font-wixMadeforDisplay">EL CANTOR</h1> */}
+            <h1 className="text-xl md:text-2xl font-lora font-bold">CALLER</h1>
           </Link>
         </div>
         <div className="flex flex-col items-center justify-center md:w-1/2">
           <Link className="text-center" href="/player">
             <img
-              className="h-[250px] md:h-[400px] pb-2 md:pb-4 drop-shadow-md"
+              className="h-[250px] md:h-[400px] pb-2 drop-shadow-md"
               src="/images/player.png"
               alt="loteria playing card"
             />
-            {/* <h1 className="text-lg md:text-xl font-medium font-wixMadeforDisplay">EL JUGADOR</h1> */}
+            <h1 className="text-xl md:text-2xl font-lora font-bold">PLAYER</h1>
           </Link>
         </div>
       </div>

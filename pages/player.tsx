@@ -53,22 +53,22 @@ export default function Player() {
 
   return (
     <>
-      <div
-        className={`w-full flex flex-row justify-center items-center ${
-          isLoading ? "mt-[275px] md:mt-0 md:h-screen" : "h-0 hidden"
+      <section
+        className={`w-full h-dynamic-screen flex flex-row justify-center items-center ${
+          !isLoading && "h-0 hidden"
         }`}
       >
-        <span className="animate-ping">
+        <div className="animate-ping">
           <Image
             priority
             src={mexicoFlagIcon}
             alt="mexico flag"
           />
-        </span>
-      </div>
+        </div>
+      </section>
       <section
         className={`flex flex-row w-full md:items-center justify-center md:p-4 ${
-          isLoading ? "h-0" : "md:min-h-screen"
+          isLoading ? "h-0" : "bg-white h-dynamic-screen md:h-full md:min-h-screen"
         }`}
       >
         <Tabla isLoading={isLoading} randomNumberArray={randomNumberArray} />

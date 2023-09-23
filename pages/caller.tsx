@@ -59,23 +59,24 @@ export default function Caller() {
     <>
       {!hasStarted ? (
         <>
-          <section className="flex flex-row h-screen md:min-h-screen items-center justify-center p-6">
+          <section className="flex flex-row h-dynamic-screen md:min-h-screen items-center justify-center p-6">
             <button
-              className="bg-[#e81e25] text-2xl font-lora font-bold px-3 py-2 outline outline-2"
+              className="px-3 py-2"
               onClick={() => {
                 const firstNum = shuffledCardsArray[0];
                 setCardNum(firstNum);
                 setHasStarted(true);
               }}
             >
-            START
+              <img src="./images/frog.png" className="h-[250px]" />
+              <p className="text-2xl font-lora font-bold">START</p>
             </button>
           </section>
         </>
       ) : (
         <>
         <Nav />
-        <section className="p-4 md:pt-8 md:pb-12 md:px-10">
+        <section className="p-4 md:pt-8 md:pb-12 md:px-10 mb-4">
           {!hasEnded && (
             <>
               <div className="flex flex-row justify-center">
@@ -86,7 +87,7 @@ export default function Caller() {
               <div className="flex flex-row justify-center items-center pt-3 pb-8">
                 <button
                   id="nextBtn"
-                  className="bg-[#07adee] border border-2 border-black text-3xl w-[50px] h-[40px] rounded-full"
+                  className="bg-[#07adee] border-2 border-black text-3xl w-[50px] h-[40px] rounded-full"
                   onClick={() => {
                     getNewCard();
                   }}
