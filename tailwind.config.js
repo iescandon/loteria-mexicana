@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        starWarsYellow: "#ffe81f",
+        goldenYellow: "#fdf236",
       },
       fontFamily: {
         lora: "Lora",

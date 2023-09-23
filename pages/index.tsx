@@ -25,7 +25,7 @@ export default function Home() {
               src="/images/caller.png"
               alt="loteria cards fanned out"
             />
-          <h1 className="text-lg md:text-xl font-medium font-wixMadeforDisplay">EL CANTOR</h1>
+          {/* <h1 className="text-lg md:text-xl font-medium font-wixMadeforDisplay">EL CANTOR</h1> */}
           </Link>
         </div>
         <div className="flex flex-col items-center justify-center md:w-1/2">
@@ -35,7 +35,7 @@ export default function Home() {
               src="/images/player.png"
               alt="loteria playing card"
             />
-            <h1 className="text-lg md:text-xl font-medium font-wixMadeforDisplay">EL JUGADOR</h1>
+            {/* <h1 className="text-lg md:text-xl font-medium font-wixMadeforDisplay">EL JUGADOR</h1> */}
           </Link>
         </div>
       </div>
