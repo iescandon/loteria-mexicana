@@ -1,6 +1,6 @@
 # Loteria Mexicana
 
-A mobile-responsive digital version of the traditional Mexican game Lotería, built with Next.js, TypeScript, and Tailwind CSS. Developed for a Hispanic Heritage Month celebration hosted by my company's Latino ERG, which I help lead. The app replicates gameplay with a randomized card deck, interactive boards, and randomized beans. Created to celebrate cultural heritage while demonstrating modern front-end development and user interaction patterns.
+A mobile-responsive digital version of the traditional Mexican game Lotería, built with Next.js, TypeScript, and Tailwind CSS. Designed as part of a Hispanic Heritage Month celebration I helped lead through my company’s Latino ERG. The app replicates gameplay with a randomized card deck, interactive boards, and randomized beans. Created to celebrate cultural heritage while demonstrating modern front-end development and user interaction patterns.
 
 https://loteria-mexicana.vercel.app/
 
