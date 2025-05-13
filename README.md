@@ -10,3 +10,5 @@ https://loteria-mexicana.vercel.app/
 - The caller will announce one card at a time. If a player has that card, they click on the corresponding square on their Lotería card to mark it with a bean.
 - The game continues until a player gets 4 in a row (diagonal, vertical, or horizontal) and wins!
 - Players can play again by clicking "Refresh" to clear the beans and receive a new card.
+
+<img width="1712" alt="Screenshot 2025-05-12 at 7 22 52 PM" src="https://github.com/user-attachments/assets/1165fbc1-775b-4b2f-be5e-cbe4b6a60770" />
